@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Ubuntu|Open+Sans|Ubuntu+Condensed|Oswald');
+body{
+  margin:0px;
+  background-color:#e4e4e4;
+}
+#navbar{
+  position:relative;
+  overflow-y: hidden;
+}
+.navHead{
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  padding: 2em 1.5em;
+  text-align: center;
+  text-decoration:  none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: ghostwhite;
+  font-size:50px;
+  font-family:'Black Ops One'
+}
+.teamN{
+  color:#3b3b3b;
+}
+.pageTitle{
+  text-align:center;
+  color:#3b3b3b;
+  font-family:'Orbitron';
+  font-size:70px;
+}
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 26%;
+  background-color: #b35555;
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  font-family:Ubuntu;
+  color:#434343;
+  text-align:center;
+}
+.copyright{
+  bottom:0px;
+  display: inline-block;
+  height:20px;
+  position: absolute;
+  bottom:10px;
+  left:10px !important;
+  color:#e4e4e4;
+}
+
+.pageTitle{
+  font-family:'Orbitron';
+}
+.pageLink {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  padding: 2em 1.5em;
+  text-align: center;
+  text-decoration:  none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255,255,255,0.5);
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.pageLink.active {
+    color: white;
+}
+.pageLink:hover {
+    color: #7d7d7d;
+}
