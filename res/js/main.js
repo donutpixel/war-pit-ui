@@ -1,72 +1,57 @@
+var r = 255;
+var g = 0;
 function checkAlliance(){
-  $( ".alliance" ).each(function( i ) {
-
-  // if($(this).text()=='Blue' || ){
-  //   $(this).css('color','blue');
-  // }else{
-  //   $(this).css('color','red');
-  // }
-  switch($(this).text()){
-    case "Blue":
-    case "blue":
-    case "b":
-    case "B":
-    $(this).css('color','#304ffe');
-    break;
-    case "Red":
-    case "red":
-    case "r":
-    case "R":
-    $(this).css('color','#F44336');
-    break;
-
-  }
-});
+  $( ".alliance" ).each(function() {
+    if($(this).text().toLowerCase() == "blue" || $(this).text().toLowerCase() == "b"){
+      $(this).css('color','blue');
+    }else if($(this).text().toLowerCase() == "red" || $(this).text().toLowerCase() == "r"){
+      $(this).css('color','red');
+    }
+  });
 }
 
 function checkStats(){
   $( ".stats" ).each(function( i ) {
-    if($(this).text().toLowerCase() =="w" || $(this).text().toLowerCase() == "win"){
+    if($(this).text().toLowerCase() =="w" || $(this).text().toLowerCase() == "win" || $(this).text().toLowerCase() == "dub"){
       $(this).css('color','ghostwhite');
-      $(this).css('background-color','#689f38');
+      $(this).css('background-color','#2ECC40');
     }else{
       $(this).css('color','ghostwhite');
-      $(this).css('background-color','#F44336');
+      $(this).css('background-color','#FF4136');
     }
   })
 }
-var r = 255;
-var g = 0;
+
 function checkScore(){
   $( '.score' ).each(function(){
     if($(this).text() < 100){
       $(this).css('color','ghostwhite');
-      $(this).css('background-color','#F44336');
-    }else {
+      $(this).css('background-color','#FF4136');
+    }else{
       $(this).css('color','ghostwhite');
-      $(this).css('background-color','#689f38');
+      $(this).css('background-color','#2ECC40');
     }
   })
 
 };
-function checkRank(){
-  $( '.rank' ).each(function(){
-    if($(this).text() <= 10){
-      $(this).css('color','ghostwhite');
-      $(this).css('background-color','#daa520');
-    }else if($(this).text() <= 30){
-      $(this).css('color','black');
-      $(this).css('background-color','#c0c0c0');
-    }else{
-      $(this).css('color','ghostwhite');
-      $(this).css('background-color','#cd7f32');
-    }
-  })
-};
+// function checkRank(){
+//   $( '.rank' ).each(function(){
+//     if($(this).text() <= 10){
+//       $(this).css('color','ghostwhite');
+//       $(this).css('background-color','#daa520');
+//     }else if($(this).text() <= 30){
+//       $(this).css('color','black');
+//       $(this).css('background-color','#c0c0c0');
+//     }else{
+//       $(this).css('color','ghostwhite');
+//       $(this).css('background-color','#cd7f32');
+//     }
+//   })
+// };
 function checkAllColors(){
   checkAlliance();
   checkStats();
-  checkRank();
+  // checkRank();
   checkScore();
 }
 $( document ).ready(function(){
@@ -88,6 +73,8 @@ $( document ).ready(function(){
           e.preventDefault();
       }
   });
+
+
   $(".stats").on('click', function(e) {
         checkAllColors();
   });

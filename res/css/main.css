@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
 @import url('https://fonts.googleapis.com/css?family=Orbitron|Ubuntu|Open+Sans|Ubuntu+Condensed|Oswald');
 body{
   margin:0px;
@@ -8,6 +7,7 @@ body{
   position:relative;
   overflow-y: hidden;
 }
+
 .navHead{
   display: block;
   padding: 8px 16px;
@@ -20,7 +20,7 @@ body{
   font-weight: 700;
   color: ghostwhite;
   font-size:50px;
-  font-family:'Black Ops One'
+  font-family:'Oswald'
 }
 .teamN{
   color:#3b3b3b;
@@ -28,7 +28,7 @@ body{
 .pageTitle{
   text-align:center;
   color:#3b3b3b;
-  font-family:'Orbitron';
+  font-family:'Oswald';
   font-size:70px;
 }
 .navbar {
@@ -36,11 +36,11 @@ body{
   margin: 0;
   padding: 0;
   width: 26%;
-  background-color: #b35555;
+  background-color: rgb(153, 0, 23);
   position: fixed;
   height: 100%;
   overflow: hidden;
-  font-family:Ubuntu;
+  font-family:'Ubuntu';
   color:#434343;
   text-align:center;
 }
@@ -54,9 +54,6 @@ body{
   color:#e4e4e4;
 }
 
-.pageTitle{
-  font-family:'Orbitron';
-}
 .pageLink {
   display: block;
   padding: 8px 16px;
@@ -75,4 +72,26 @@ body{
 }
 .pageLink:hover {
     color: #7d7d7d;
+}
+
+.detailTitle{
+  background-color: rgb(153, 0, 23);
+  border-radius: 3px;
+  width:100%;
+  margin-left:2em;
+  font-family:"Oswald";
+  padding:2px;
+  color: white;
+}
+
+.botdetails {
+  font-family:"Ubuntu";
+}
+
+.botName{
+  font-family:'Oswald';
+}
+
+.rank{
+  font-weight: bolder;
 }
